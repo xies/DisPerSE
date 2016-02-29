@@ -1,0 +1,6 @@
+/Users/mimi/Code/DisPerSE/bin/mse
+/Users/mimi/Code/DisPerSE/bin/skelconv
+/Users/mimi/Code/DisPerSE/bin/netconv
+/Users/mimi/Code/DisPerSE/bin/fieldconv
+/Users/mimi/Code/DisPerSE/bin/delaunay_2D
+/Users/mimi/Code/DisPerSE/bin/delaunay_3D

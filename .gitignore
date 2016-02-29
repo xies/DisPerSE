@@ -1,0 +1,4 @@
+CMake*
+bin/*
+CPack*
+test_images/*
