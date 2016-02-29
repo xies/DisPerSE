@@ -133,17 +133,6 @@ install/fast: preinstall/fast
 	/usr/local/Cellar/cmake/3.4.3/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/3.4.3/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
 	cd /Users/mimi/Code/DisPerSE && $(CMAKE_COMMAND) -E cmake_progress_start /Users/mimi/Code/DisPerSE/CMakeFiles /Users/mimi/Code/DisPerSE/src/delaunay/CMakeFiles/progress.marks
@@ -874,7 +863,6 @@ help:
 	@echo "... install/local"
 	@echo "... delaunay_3D"
 	@echo "... install"
-	@echo "... install/strip"
 	@echo "... delaunay_2D"
 	@echo "... __/C/NDfield.o"
 	@echo "... __/C/NDfield.i"

@@ -38,7 +38,6 @@ output_filename = [filename ...
 
 MSC = parseNDskl(output_filename);
 
-
 %%
 
 mask = MSC2mask(MSC, size(im,1),size(im,2));
