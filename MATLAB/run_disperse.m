@@ -1,8 +1,8 @@
 
-filename = '/Users/mimi/Code/DisPerSE/test_images/test.fits';
+filename = '/Users/mimi/Code/DisPerSE/test_images/mem.tif';
 [file_dir,name,ext] = fileparts( filename );
 
-cutoff = 18;
+cutoff = 30;
 Nsmooth = 3;
 
 %% Calculate Morse Smale complex, cut at cutoff, and convert the filament structure:
